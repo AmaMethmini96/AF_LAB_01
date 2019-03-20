@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+                
+            function calculateTax(taxPct){
+ 
+                return function(amount){
+
+                    return (amount + (amount * taxPct/100));
+                }
+            }
+
+         
+            var tax = calculateTax(10); 
+
+            
+            console.log(tax(20000));
+            
+        
+        </script>
+    </body>
+</html>
